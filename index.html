@@ -3,14 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day Reflection</title>
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Day Reflection</h1>
-    <form>
-        <label for="reflection">How was your day?</label><br>
-        <textarea id="reflection" name="reflection" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <h1>Mood Tracker Application</h1>
+    </header>
+    <main>
+        <section id="mood-tracker">
+            <h2>Track Your Mood</h2>
+            <form>
+                <label for="mood">Select your mood:</label>
+                <select id="mood" name="mood">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="neutral">Neutral</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="emotion-categories">
+            <h2>Emotion Categories</h2>
+            <ul>
+                <li>Happiness</li>
+                <li>Sadness</li>
+                <li>Anger</li>
+                <li>Anxiety</li>
+                <li>Calmness</li>
+            </ul>
+        </section>
+        <section id="history-tracking">
+            <h2>Mood History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Mood</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Mood history will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="result-display">
+            <h2>Your Mood Results</h2>
+            <p>Your latest mood entry: <span id="latest-mood"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mood Tracker App</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
