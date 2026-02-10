@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.date {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #999;
+}
